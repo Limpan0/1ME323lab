@@ -1,0 +1,38 @@
+<!-- 
+music_genres
+    song+
+        title
+        artist*
+            name
+            birth
+            gender *
+                attr: (male | female)
+            link
+                attr: url
+        group*
+            formed
+            link attr: url
+        album?
+            attr: img
+            attr: caption?
+        release_date
+        duration
+-->
+
+<!ELEMENT music_genres (song+)>
+    <!ELEMENT song (title, artist*, group*, link, album?, release_date, duration)>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT artist (name, birth, gender*)>
+            <!ELEMENT name (#PCDATA)>
+            <!ELEMENT birth (#PCDATA)>
+            <!ELEMENT gender (#PCDATA)>
+                <!ATTLIST gender type (male|female) #IMPLIED>
+        <!ELEMENT group (group_name, formed)>
+            <!ELEMENT group_name (#PCDATA)>
+            <!ELEMENT formed (#PCDATA)>
+        <!ELEMENT link EMPTY>
+                <!ATTLIST link url CDATA #REQUIRED>
+        <!ELEMENT album EMPTY>
+            <!ATTLIST album img CDATA #REQUIRED caption CDATA #IMPLIED>
+        <!ELEMENT release_date (#PCDATA)>
+        <!ELEMENT duration (#PCDATA)>

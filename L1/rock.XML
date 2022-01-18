@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE music_genres SYSTEM "music_genres.dtd">
+
+<music_genres>
+    
+    <song>
+        <title>Eye of the Tiger</title>
+        <group>
+            <group_name>Survivor</group_name>
+            <formed>1978</formed>
+        </group>
+        <link url="https://www.allmusic.com/artist/survivor-mn0000039637"/>
+        <album img="bilder/eyeofthetiger.jpg" caption="Eye of the Tiger cover"></album>
+        <release_date>1982</release_date>
+        <duration>04:06</duration>
+    </song>
+
+    <song>
+        <title>Paint It Black</title>
+        <group>
+            <group_name>The Rolling Stones</group_name>
+            <formed>1962</formed>
+        </group>
+        <link url="https://www.allmusic.com/artist/the-rolling-stones-mn0000894465"/>
+        <album img="bilder/paintitblack.jpg" caption="Paint It Black cover"></album>
+        <release_date>1964</release_date>
+        <duration>03:20</duration>
+    </song>
+
+    <song>
+        <title></title>
+        <group>
+            <group_name></group_name>
+            <formed></formed>
+        </group>
+        <link url=""/>
+        <album img="" caption=""></album>
+        <release_date></release_date>
+        <duration></duration>
+    </song>
+
+    <song>
+        <title></title>
+        <group>
+            <group_name></group_name>
+            <formed></formed>
+        </group>
+        <link url=""/>
+        <album img="" caption=""></album>
+        <release_date></release_date>
+        <duration></duration>
+    </song>
+    
+</music_genres>

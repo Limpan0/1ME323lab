@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE music_genres SYSTEM "music_genres.dtd">
+
+<music_genres>
+    
+    <song>
+        <title></title>
+        <artist>
+            <name></name>
+            <age></age>
+            <gender type="male"></gender>
+        </artist>
+        <group>
+            <formed></formed>
+        </group>
+        <album img="" caption=""></album>
+        <release_date></release_date>
+        <duration></duration>
+    </song>
+
+    <song>
+        <title></title>
+        <artist>
+            <name></name>
+            <age></age>
+            <gender type="male"></gender>
+        </artist>
+        <group>
+            <formed></formed>
+        </group>
+        <album img="" caption=""></album>
+        <release_date></release_date>
+        <duration></duration>
+    </song>
+
+    <song>
+        <title></title>
+        <artist>
+            <name></name>
+            <age></age>
+            <gender type="male"></gender>
+        </artist>
+        <group>
+            <formed></formed>
+        </group>
+        <album img="" caption=""></album>
+        <release_date></release_date>
+        <duration></duration>
+    </song>
+
+    <song>
+        <title></title>
+        <artist>
+            <name></name>
+            <age></age>
+            <gender type="male"></gender>
+        </artist>
+        <group>
+            <formed></formed>
+        </group>
+        <album img="" caption=""></album>
+        <release_date></release_date>
+        <duration></duration>
+    </song>
+
+</music_genres>

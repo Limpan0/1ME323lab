@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE music_genres SYSTEM "music_genres.dtd">
+
+<music_genres>
+    
+    <song>
+        <title>Symphony No. 5</title>
+        <artist>
+            <name>Ludwig van Beethoven</name>
+            <birth>16-12-1770</birth>
+            <gender type="male"/>
+        </artist>
+        <link url="https://www.allmusic.com/artist/ludwig-van-beethoven-mn0000536126" />
+        <release_date>1809</release_date>
+        <duration>38:10</duration>
+    </song>
+
+    <song>
+        <title>Symphony No. 40</title>
+        <artist>
+            <name>Wolfgang Amadeus Mozart</name>
+            <birth>27-01-1756</birth>
+            <gender type="male"/>
+        </artist>
+        <link url="https://www.allmusic.com/artist/wolfgang-amadeus-mozart-mn0000026350"/>
+        <release_date>1788</release_date>
+        <duration>26:36</duration>
+    </song>
+
+    <song>
+        <title>Four Seasons</title>
+        <artist>
+            <name>Antonio Vivaldi</name>
+            <birth>04-03-1678</birth>
+            <gender type="male"/>
+        </artist>
+        <link url="https://www.allmusic.com/artist/antonio-vivaldi-mn0000685058/biography" />
+        <release_date>1725</release_date>
+        <duration>~41:00</duration>
+    </song>
+    
+    <song>
+        <title>Sonata</title>
+        <artist>
+            <name>Johann Sebastian Bach</name>
+            <birth>21-03-1685</birth>
+            <gender type="male"/>
+        </artist>
+        <link url="https://www.allmusic.com/artist/johann-sebastian-bach-mn0000075140" />
+        <release_date>1720</release_date>
+        <duration>16:36</duration>
+    </song>
+
+</music_genres>
