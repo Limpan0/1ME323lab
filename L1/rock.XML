@@ -28,27 +28,29 @@
     </song>
 
     <song>
-        <title></title>
-        <group>
-            <group_name></group_name>
-            <formed></formed>
-        </group>
-        <link url=""/>
-        <album img="" caption=""></album>
-        <release_date></release_date>
-        <duration></duration>
+        <title>Good Rockin' Tonight</title>
+        <artist>
+            <name>Elvis Presley</name>
+            <birth>08-01-1935</birth>
+            <gender type="male"/>
+        </artist>
+        <link url="https://www.allmusic.com/artist/elvis-presley-mn0000180228"/>
+        <album img="bilder/goodrockintonight.jpg" caption="Good Rockin' Tonight Cover"></album>
+        <release_date>1954</release_date>
+        <duration>02:12</duration>
     </song>
 
     <song>
-        <title></title>
-        <group>
-            <group_name></group_name>
-            <formed></formed>
-        </group>
-        <link url=""/>
-        <album img="" caption=""></album>
-        <release_date></release_date>
-        <duration></duration>
+        <title>Dancing in the Dark</title>
+        <artist>
+            <name>Bruce Springsteen</name>
+            <birth>23-09-1949</birth>
+            <gender type="male"></gender>
+        </artist>
+        <link url="https://www.allmusic.com/artist/bruce-springsteen-mn0000530745"/>
+        <album img="bilder/dancinginthedark.jpg" caption="Dancing in the Dark cover"></album>
+        <release_date>1984</release_date>
+        <duration>04:01</duration>
     </song>
     
 </music_genres>

@@ -4,63 +4,54 @@
 <music_genres>
     
     <song>
-        <title></title>
-        <artist>
-            <name></name>
-            <age></age>
-            <gender type="male"></gender>
-        </artist>
+        <title>Get Lucky</title>
         <group>
-            <formed></formed>
+            <group_name>Daft Punk</group_name>
+            <formed>1993</formed>
         </group>
-        <album img="" caption=""></album>
-        <release_date></release_date>
-        <duration></duration>
+        <link url="https://www.allmusic.com/artist/daft-punk-mn0000667669" />
+        <album img="bilder/getlucky.jpg" caption="Get Lucky cover"></album>
+        <release_date>2013</release_date>
+        <duration>06:09</duration>
     </song>
 
     <song>
-        <title></title>
+        <title>Levels</title>
         <artist>
-            <name></name>
-            <age></age>
-            <gender type="male"></gender>
+            <name>Avicii</name>
+            <birth>08-09-1989</birth>
+            <gender type="male"/>
         </artist>
-        <group>
-            <formed></formed>
-        </group>
-        <album img="" caption=""></album>
-        <release_date></release_date>
-        <duration></duration>
+        <link url="https://www.allmusic.com/artist/avicii-mn0002393596"/>
+        <album img="bilder/levels.jpg" caption="Levels cover"></album>
+        <release_date>2011</release_date>
+        <duration>05:39</duration>
+    </song>
+    
+    <song>
+        <title>Scary Monsters and Nice Sprites</title>
+        <artist>
+            <name>Skrillex</name>
+            <birth>15-01-1988</birth>
+            <gender type="male"/>
+        </artist>
+        <link url="https://www.allmusic.com/artist/skrillex-mn0002365087"/>
+        <album img="bilder/scarymonsters.jpg" caption="Scary Monsters and Nice Sprites cover"></album>
+        <release_date>2010</release_date>
+        <duration>04:05</duration>
     </song>
 
     <song>
-        <title></title>
+        <title>Where Are Ü Now</title>
         <artist>
-            <name></name>
-            <age></age>
-            <gender type="male"></gender>
+            <name>Diplo</name>
+            <birth>10-11-1978</birth>
+            <gender type="male"/>
         </artist>
-        <group>
-            <formed></formed>
-        </group>
-        <album img="" caption=""></album>
-        <release_date></release_date>
-        <duration></duration>
-    </song>
-
-    <song>
-        <title></title>
-        <artist>
-            <name></name>
-            <age></age>
-            <gender type="male"></gender>
-        </artist>
-        <group>
-            <formed></formed>
-        </group>
-        <album img="" caption=""></album>
-        <release_date></release_date>
-        <duration></duration>
+        <link url="https://www.allmusic.com/artist/diplo-mn0000793225"/>
+        <album img="bilder/whereareunow.jpg" caption="Where are u now cover"></album>
+        <release_date>2015</release_date>
+        <duration>04:10</duration>
     </song>
 
 </music_genres>
