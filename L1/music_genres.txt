@@ -1,0 +1,17 @@
+music_genres
+    song+
+        title
+        artist*
+            name
+            age
+            gender *
+                attr: (male | female)
+        group*
+            formed
+        link
+        album?
+            attr: img
+            attr: caption?
+        release_date
+        duration
+
