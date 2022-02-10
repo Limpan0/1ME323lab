@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(81, 3, 83);
+    color: whitesmoke;
+}
+
+#display {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#display img {
+    max-width: 200px;
+    margin: 20px;
+}
+

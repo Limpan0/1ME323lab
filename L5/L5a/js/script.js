@@ -13,7 +13,7 @@ function init() {
     let images = new ImageViewer("imgViewer");
     document.querySelector("#categoryMenu").addEventListener("change",
         function() {
-            images.requestImages("xml/images" + this.selectedIndex + ".xml");
+            images.requestImages("json/images" + this.selectedIndex + ".json");
             this.selectedIndex = 0;
         }
     );
@@ -41,18 +41,20 @@ window.addEventListener("load", init);
 // ---------------------------------------------------------------
 // ----- Funktioner för bildspelet -----
 
+
 class ImageViewer {
     //klassens constructor
-    constructor(id) {
+    constructor(imgViewer) {
         this.list = {
             imgUrls: "img/blank.png",
             imgCaptions: ""
         };
         this.imgIx = 0;
         this.timer = null;
-        this.titleElem = document.querySelector("#" + id + " h3");
-        this.imgElem = document.querySelector("#" + id + " img");
-        this.captionElems = document.querySelector("#" + id + " p");
+        this.titleElem = document.querySelector("#" + imgViewer + " h3");
+        this.imgElem = document.querySelector("#" + imgViewer + " img");
+        this.captionElems = document.querySelector("#" + imgViewer + " p");
+        
     }
     // Gör ett Ajax-anrop för att läsa in begärd fil
     requestImages(file) {
@@ -63,21 +65,20 @@ class ImageViewer {
         request.onreadystatechange = function() {
             if (request.readyState == 4) // readyState 4 --> kommunikationen är klar
                 if (request.status == 200)
-                    self.getImages(request.responseXML); // status 200 (OK) --> filen fanns
+                    self.getImages(request.responseText); // status 200 (OK) --> filen fanns
                 else
                     document.getElementById("result").innerHTML = "Den begärda resursen fanns inte.";
         };
     }
     // Funktion för att tolka XML-koden och lägga in innehållet i variablerna för bilderna i bildspelet
-    getImages(XMLcode) {
-        this.titleElem.innerHTML = XMLcode.getElementsByTagName("category")[0].firstChild.data;
-        let urlElems = XMLcode.getElementsByTagName("url"); // Alla url-element
-        let captionElems = XMLcode.getElementsByTagName("caption"); // Alla caption-element
+    getImages(JSONtext) {
+        this.titleElem.innerHTML = JSON.parse(JSONtext).category;
+        let image = JSON.parse(JSONtext).image;
         this.list = []; // Nya tomma arrayer för bilder
-        for (let i = 0; i < urlElems.length; i++) {
+        for (let i = 0; i < image.length; i++) {
             this.list.push({
-                imgUrls: urlElems[i].firstChild.data,
-                imgCaptions: captionElems[i].firstChild.data
+                imgUrls: image[i].url,
+                imgCaptions: image[i].caption
             });
         }
         this.imgIx = 0;

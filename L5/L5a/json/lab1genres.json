@@ -1,0 +1,60 @@
+{
+	"song": [
+		{
+			"title": "Get Lucky",
+			"group": [
+				{
+					"group_name": "Daft Punk",
+					"formed": "1993"
+				}
+			],
+			"link": "href=https://www.allmusic.com/artist/daft-punk-mn0000667669",
+			"album": "src=bilder/getlucky.jpg alt=Get Lucky Cover",
+			"release_date": "2013",
+			"duration": "06:09"
+		},
+		{
+			"title": "Levels",
+			"artist": [
+				{
+					"name": "Avicii",
+					"birth": "08-09-1989",
+					"gender": "male"
+				}
+			],
+			"link": "href=https://www.allmusic.com/artist/avicii-mn0002393596",
+			"album": "src=bilder/levels.jpg alt=Levels cover",
+			"release_date": "2011",
+			"duration": "05:39"
+		},
+		{
+			"title": "Scary Monsters and Nice Sprites",
+			"artist": [
+				{
+					"name": "Skrillex",
+					"birth": "15-01-1988",
+					"gender": "male"
+				}
+			],
+			"link": "href=https://www.allmusic.com/artist/skrillex-mn0002365087",
+			"album": "src=bilder/scarymonsters.jpg alt=Scary Monsters and Nice Sprites cover",
+			"release_date": "2010",
+			"duration": "04:05"
+		},
+		{
+			"title": "Where Are Ü Now",
+			"artist": [
+				{
+					"name": "Diplo",
+					"birth": "10-11-1978",
+					"gender": "male"
+				}
+			],
+			"link": "href=https://www.allmusic.com/artist/diplo-mn0000793225",
+			"album": "src=bilder/whereareunow.jpg alt=Where are u now cover",
+			"release_date": "2015",
+			"duration": "04:10"
+		}
+		
+	]
+}
