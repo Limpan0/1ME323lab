@@ -109,7 +109,7 @@ class ImageViewer {
     //funktion som byter bilder automatiskt
 	autoImage(e,interval) {
 		let self = this; //sparar objektet som en ny variabel
-		if (this.timer == null) { // Start
+		if (this.timer == null) { // Startar timern
 			this.timer = setInterval(function(){self.nextImg()},interval);
 			if (e) e.currentTarget.style.backgroundColor = "green";
 		}

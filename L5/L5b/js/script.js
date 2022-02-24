@@ -34,10 +34,10 @@ window.addEventListener("load", init);
     }
     // Funktion för att tolka XML-koden och lägga in innehållet i variablerna för bilderna i bildspelet
     function getData(JSONtext) {
-        let song = JSON.parse(JSONtext).song;
-        let display = document.getElementById("display");
-        let HTMLcode = "";
-        for (let i = 0; i < song.length; i++) {
+        let song = JSON.parse(JSONtext).song; //hämtar sången från JSON-filen
+        let display = document.getElementById("display"); //refererar till display elementet i HTML-koden
+        let HTMLcode = ""; //ny variabel där all text ska sparas och sedan skrivas ut
+        for (let i = 0; i < song.length; i++) { 
             HTMLcode += "<h2>"+ song[i].title + "</h2>";
             if(song[i].group){
                HTMLcode += "<p> Group: " + song[i].group.groupname + "<br> formed: " + song[i].group.formed ;
@@ -46,7 +46,6 @@ window.addEventListener("load", init);
                 HTMLcode += "<p> Artist: " + song[i].artist.name + "<br> Birthdate: " + song[i].artist.birth + "<br> gender: " + song[i].artist.gender ;
             }
             HTMLcode += " <br><a href='" + song[i].link + "' target='_blank'>Link to song</a> <br> album cover: <br> <img src='" + song[i].album + "'> <br> release date: " + song[i].release_date + "<br> duration: " + song[i].duration + "</p> <hr>"; 
-            
         }
         display.innerHTML = HTMLcode;
     }

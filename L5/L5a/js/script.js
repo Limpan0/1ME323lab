@@ -72,21 +72,20 @@ class ImageViewer {
     }
     // Funktion för att tolka XML-koden och lägga in innehållet i variablerna för bilderna i bildspelet
     getImages(JSONtext) {
-        this.titleElem.innerHTML = JSON.parse(JSONtext).category;
-        let image = JSON.parse(JSONtext).image;
-        this.list = []; // Nya tomma arrayer för bilder
+        this.titleElem.innerHTML = JSON.parse(JSONtext).category; //skriver ut kategorin
+        let image = JSON.parse(JSONtext).image; //gör om JSON-texten till ett objekt
+        this.list = []; // Ny tom array för bilderna
         for (let i = 0; i < image.length; i++) {
-            this.list.push({
+            this.list.push({ //pushar in dom nya bilderna i arrayen
                 imgUrls: image[i].url,
                 imgCaptions: image[i].caption
             });
         }
-        this.imgIx = 0;
+        this.imgIx = 0; // för att den första bilden i listan ska visas
         this.showImg(); // Visa första bilden
     }
     // Visa bilden med index imgIx
     showImg() {
-
         this.imgElem.src = this.list[this.imgIx].imgUrls;
         this.captionElems.innerHTML = (this.imgIx + 1) + ". " + this.list[this.imgIx].imgCaptions;
     }
