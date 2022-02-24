@@ -132,8 +132,7 @@ function requestImgsByLocation(lat,lon) {
 
 // Tolka svaret och visa upp bilderna.
 function showMoreImgs(response) {
-	response = JSON.parse(response); //konverterar texten till ett objekt
-	flickrImgElem.innerHTML = "";		
+	response = JSON.parse(response); //konverterar texten till ett objekt		
 	for (let i = 0; i < response.photos.photo.length; i++) {
 		let photo = response.photos.photo[i]; // Ett foto i svaret
 		let imgUrl = "https://live.staticflickr.com/" + photo.server + "/" +
