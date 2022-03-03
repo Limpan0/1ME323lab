@@ -138,7 +138,7 @@ function showMoreImgs(response) {
 		let imgUrl = "https://live.staticflickr.com/" + photo.server + "/" +
 					photo.id + "_" + photo.secret + "_s.jpg"; // Adress till en bild
 		let newElem = document.createElement("img"); // Nytt img-element
-		newElem.setAttribute("src",imgUrl);
+		newElem.setAttribute("src",imgUrl); 
 		newElem.setAttribute("data-photo",JSON.stringify(photo)); // Spara data om fotot
 		moreImgElem.appendChild(newElem);
 	}

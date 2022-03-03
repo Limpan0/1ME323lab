@@ -10,7 +10,7 @@ var timer;			// Referens till timern för bildspelet
 // Initiering av globala variabler och händelsehanterare
 function init() {
     
-    let images = new ImageViewer("imgViewer");
+    let images = new ImageViewer("imgViewer"); //ny instans till objektet
     document.querySelector("#categoryMenu").addEventListener("change",
         function() {
             images.requestImages("json/images" + this.selectedIndex + ".json");
@@ -54,7 +54,6 @@ class ImageViewer {
         this.titleElem = document.querySelector("#" + imgViewer + " h3");
         this.imgElem = document.querySelector("#" + imgViewer + " img");
         this.captionElems = document.querySelector("#" + imgViewer + " p");
-        
     }
     // Gör ett Ajax-anrop för att läsa in begärd fil
     requestImages(file) {
@@ -72,6 +71,7 @@ class ImageViewer {
     }
     // Funktion för att tolka XML-koden och lägga in innehållet i variablerna för bilderna i bildspelet
     getImages(JSONtext) {
+        console.log(JSON.parse(JSONtext));
         this.titleElem.innerHTML = JSON.parse(JSONtext).category; //skriver ut kategorin
         let image = JSON.parse(JSONtext).image; //gör om JSON-texten till ett objekt
         this.list = []; // Ny tom array för bilderna

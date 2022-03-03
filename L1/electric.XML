@@ -2,7 +2,7 @@
 <!DOCTYPE music_genres SYSTEM "music_genres.dtd">
 
 <music_genres>
-    
+
     <song>
         <title>Get Lucky</title>
         <group>
@@ -20,22 +20,22 @@
         <artist>
             <name>Avicii</name>
             <birth>08-09-1989</birth>
-            <gender type="male"/>
+            <gender type="male" />
         </artist>
-        <link url="https://www.allmusic.com/artist/avicii-mn0002393596"/>
+        <link url="https://www.allmusic.com/artist/avicii-mn0002393596" />
         <album img="bilder/levels.jpg" caption="Levels cover"></album>
         <release_date>2011</release_date>
         <duration>05:39</duration>
     </song>
-    
+
     <song>
         <title>Scary Monsters and Nice Sprites</title>
         <artist>
             <name>Skrillex</name>
             <birth>15-01-1988</birth>
-            <gender type="male"/>
+            <gender type="male" />
         </artist>
-        <link url="https://www.allmusic.com/artist/skrillex-mn0002365087"/>
+        <link url="https://www.allmusic.com/artist/skrillex-mn0002365087" />
         <album img="bilder/scarymonsters.jpg" caption="Scary Monsters and Nice Sprites cover"></album>
         <release_date>2010</release_date>
         <duration>04:05</duration>
@@ -46,9 +46,9 @@
         <artist>
             <name>Diplo</name>
             <birth>10-11-1978</birth>
-            <gender type="male"/>
+            <gender type="male" />
         </artist>
-        <link url="https://www.allmusic.com/artist/diplo-mn0000793225"/>
+        <link url="https://www.allmusic.com/artist/diplo-mn0000793225" />
         <album img="bilder/whereareunow.jpg" caption="Where are u now cover"></album>
         <release_date>2015</release_date>
         <duration>04:10</duration>
