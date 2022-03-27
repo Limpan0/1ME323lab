@@ -43,7 +43,7 @@ function initMap() {
 			}
 		);
 	for (let i = 0; i < markerData.length; i++) {
-		let newMarker = new google.maps.Marker(markerData[i]); // Objekt för markering
+		let newMarker = new google.maps.Marker(markerData[i]); // Objekt för markeringar
 		myMarkers.push(newMarker);
 	}
 	userMarker = null;
@@ -58,6 +58,7 @@ function newUserMarker(e) {
 	userMarker.setMap(myMap);
 	
 	mapLocationElem.innerHTML = "latitude: " + e.latLng.lat() + " | longitude: " + e.latLng.lng(); //utskrift av koordinater 
+	//
 } // End newUserMarker
 
 // Visa marker för den adressknapp som användaren klickat på

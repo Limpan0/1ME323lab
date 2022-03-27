@@ -64,7 +64,7 @@ function newImgs(response) {
 		newElem.setAttribute("src",imgUrl);
 		newElem.setAttribute("data-photo",JSON.stringify(photo)); // Spara data om fotot
 		newElem.addEventListener("click",enlargeImg);
-		flickrImgElem.appendChild(newElem);
+		flickrImgElem.appendChild(newElem); // lägger till img-taggen i flickImgElem
 	} // End for
 } // End newImgs
 
@@ -110,7 +110,6 @@ function requestLocation(id) {
 // Visa koordinater
 function showLocation(response) {
 	let loc = JSON.parse(response).photo.location; //plockar ut och sparar location från bildens JSON-fil 
-	
 	let lat = loc.latitude; //tar fram latituden
 	let lon = loc.longitude; //tar fram longituden
 	imgLocationElem.innerHTML = "Latitude: " + lat + " Longitude: " + lon; //skriver ut latituden och longituden

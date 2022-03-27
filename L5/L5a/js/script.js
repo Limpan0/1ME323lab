@@ -45,6 +45,7 @@ window.addEventListener("load", init);
 class ImageViewer {
     //klassens constructor
     constructor(imgViewer) {
+        //constructor egenskaper
         this.list = {
             imgUrls: "img/blank.png",
             imgCaptions: ""
@@ -71,7 +72,6 @@ class ImageViewer {
     }
     // Funktion för att tolka XML-koden och lägga in innehållet i variablerna för bilderna i bildspelet
     getImages(JSONtext) {
-        console.log(JSON.parse(JSONtext));
         this.titleElem.innerHTML = JSON.parse(JSONtext).category; //skriver ut kategorin
         let image = JSON.parse(JSONtext).image; //gör om JSON-texten till ett objekt
         this.list = []; // Ny tom array för bilderna
