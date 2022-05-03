@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 100%;
+    grid-template-areas: 
+    "nav"
+    "main";
+}
+
+main {
+    
+    background-color: #f5f5f5;
+    grid-area: main;
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+.entry {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: 
+    "img name . description"
+    "img text text text"
+    "img text text text"
+    "img rating . address"
+    ;
+    box-shadow: 2px 2px 2px grey;
+    margin: 0 0 1rem 0 ;
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 1rem;
+    border: 1px grey;
+    border-style: solid;
+}
+
+.name, .text, .address, .rating, .num_reviews, .description {
+    margin-top: 0;
+}
+
+.address {
+    grid-area: address;
+    width: auto;
+    text-align: right;
+}
+
+.ratingDiv {
+    grid-area: rating;
+    width: 30%;
+}
+
+.name{
+    grid-area: name;
+}
+
+.description {
+    grid-area: description;
+    text-align: right;
+}
+
+.img {
+    grid-area: img;
+    width: 15rem;
+    padding-bottom: 1rem;
+}
+
+.text {
+    grid-area: text;
+}
+
+.num_reviews {
+    float: right;
+    margin-bottom: 0;
+}
+
+.rating {
+    float: left;
+    margin-bottom: 0;
+}
+
+.flexBox {
+    grid-area: nav;
+    padding: 0 1rem 0 1rem;
+    border-bottom: 1px grey;
+    border-bottom-style: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.flexBox a {
+    text-decoration: none;
+}
+.flexBox a:link, a:visited {
+    color: black;
+}
+.navList a:hover {
+    background-color: lightgrey;
+}
+
+.logoLink {
+    font-size: x-large;
+}
+
+.navList {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navList a, li {
+    padding: 1.5rem;
+}
+
+.headerLine {
+    border-left: 1.5px solid gray;
+    height: 50px;
+}
+
+#filterForm {
+    margin: 3.5rem 0 0 4rem;
+}
+
+#rouletteButton {
+    text-decoration: none;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: orange;
+    margin: 5rem 0 0 5rem;
+    padding: 1.5rem;
+}
+
+#form {
+    width: 80%;
+    background-color: white;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px grey;
+    border-style: solid;
+    margin-bottom: 2.5rem;
+}
+
+input:hover, .labels:hover, select:hover {
+    cursor: pointer;
+}
+
+select {
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+#formButton {
+    margin-top: 1rem;
+    float: right;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+#resultSection {
+    margin: 3.5rem 0 0 0;
+}
+
+#searchResults {  
+    width: 95%;
+    margin-right: 1rem;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Det e Lunch</title>
+</head>
+<body>
+    <nav class="flexBox">
+        <a href="index.html" class="logoLink">
+            <img src="" alt="">
+            Det e Lunch
+        </a>
+        <ul class="navList">
+            <li><a href="roulette.html">Lunchroulette</a></li>
+            <li><div class="headerLine"></div></li>
+            <li><a href="about.html">Om oss</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="filterMenu">
+            <form id="filterForm">
+                <fieldset id="form">
+                    <label>Stad:
+                        <select id="city">
+                            <option value="" selected>Välj ett alternativ</option>
+                            <option value="jonkoping">Jönköping</option>
+                            <option value="kalmar">Kalmar</option>
+                            <option value="ljungby">Ljungby</option>
+                            <option value="nassjo">Nässjö</option>
+                            <option value="oskarshamn">Oskarshamn</option>
+                            <option value="vetlanda">Vetlanda</option>
+                            <option value="varnamo">Värnamo</option>
+                            <option value="vastervik">Västervik</option>
+                            <option value="vaxjo">Växjö</option>
+                            <option value="oland">Öland</option>
+                        </select>
+                    </label><br><br>
+                    <label>Mattyp:
+                        <select id="sub_type">
+                            <option value="" disabled selected hidden>Välj ett alternativ</option>
+                            <option value="A_LA_CARTE">A La Carte</option>
+                            <option value="ASIAN">Asiatiskt</option>
+                            <option value="BURGERS">Burgare</option>
+                            <option value="HOT_DOGS">Varmkorv</option>
+                            <option value="LATIN">Latinskt</option>
+                            <option value="LOCAL">Lokalt</option>
+                            <option value="MEDITERRANEAN">Medelhavs</option>
+                            <option value="PIZZA">Pizza</option>
+                            <option value="PASTRIES">Bakelser</option>
+                            <option value="OTHER">Annat</option>
+                        </select>
+                    </label><br><br>
+                    <input type="checkbox" id="vegitarian">
+                    <label for="vegitarian" class="labels">Vegetariskt</label>
+                    <br>
+                    <input type="checkbox" id="ekological">
+                    <label for="ekological" class="labels">Ekologiskt</label>
+                    <br>
+                    <input type="checkbox" id="buffet">
+                    <label for="buffet" class="labels">Buffé</label>
+                    <br>
+                    <input type="checkbox" id="takeout">
+                    <label for="takeout" class="labels">Takeout</label>
+                    <br>
+                    <input type="checkbox" id="outdoor_seating">
+                    <label for="outdoor_seating" class="labels">Uteservering</label>
+                    <br>
+                    <input type="checkbox" id="child_menu">
+                    <label for="child_menu" class="labels">Banrmeny</label>
+                    <br>
+                    <input type="submit" value="Filtrera" id="formButton">
+                </fieldset>
+            </form>
+            <a href="roulette.html" id="rouletteButton">Har du svårt att välja?</a>
+        </section>
+        <section id="resultSection">
+            <div id="searchResults"></div>
+        </section>
+    </main>
+</body>
+</html>
